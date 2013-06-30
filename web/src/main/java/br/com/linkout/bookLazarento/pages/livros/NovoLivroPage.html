@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:wicket="http://wicket.apache.org/" xml:lang="en" lang="en">
+  <head></head>
+  <body>  	
+        <wicket:extend>        
+              <form wicket:id="novoLivroForm">
+                     <fieldset>
+                            <legend>Cadastro de novo livro</legend>
+                            <label for="titulo">Título</label>
+	                        <input wicket:id="titulo" id="titulo" type="text" size="40" />
+	                        <label for="titulo">Valor da locação</label>
+	                        <input wicket:id="valorDaLocacao" id="valorDaLocacao" type="text" size="10" />
+                            <span class="buttons">
+                            <input type="submit" wicket:id="criarLivro" value="Criar" />
+                            </span>
+                     </fieldset>
+              	<div wicket:id="feedback"></div>
+              </form>
+        </wicket:extend>
+  </body>
+  </html>
